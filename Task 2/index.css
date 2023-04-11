@@ -1,0 +1,243 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+.head .head-content {
+  margin-top: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  animation: fade 5s;
+}
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.head span {
+  margin: 0;
+  font-family: "Exo", sans-serif;
+  font-size: 102px;
+  font-weight: 900;
+  color: white;
+
+  letter-spacing: 15px;
+}
+.head p {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  width: 800px;
+  letter-spacing: 2px;
+}
+.head::before {
+  content: "";
+  background: url("images/Lewis-Hamilton-Wallpapers.jpg") no-repeat center
+    center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.achievements {
+  margin-top: 20px;
+}
+.achievements::before {
+  content: "";
+  background: url("images/LH_16x9.png") no-repeat center center/cover;
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+.achieve-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 90px;
+  grid-row-gap: 60px;
+  width: 300px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: 150px;
+  position: relative;
+  top: 100px;
+  
+}
+
+
+.achieve-head {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  line-height: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+ 
+ 
+}
+ 
+ 
+
+.achieve-head span {
+  font-size: 50px;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+}
+
+.about{
+  margin-top: 313px;
+  background: #485563;   
+  background: -webkit-linear-gradient(to right, #29323c, #485563);    
+  background: linear-gradient(to right, #29323c, #4d5965);  
+  color: white;
+  text-align: center;
+  height: 800px;
+  padding-bottom: 35px;
+}
+.about-info h1{
+  display: inline-block;
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 50px;
+    padding-top: 10px;
+    font-weight: 900;
+     letter-spacing: 5px;
+    border-bottom: 2px solid white;
+    padding-bottom: 1px;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0),
+    5px 4px 0px rgb(0, 0, 0);
+
+}
+ 
+.about-info p{
+  font-family: "Roboto", sans-serif;
+  color: #ced6dd;
+  width: 700px;
+  margin: auto;
+}
+ .gallery{
+  background: #ECE9E6;   
+background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  
+background: linear-gradient(to right, #FFFFFF, #ECE9E6);  
+ text-align: center;
+ height: 700px;
+ }
+  
+.photos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+  margin: auto;
+ 
+   
+}
+.gallery h1{
+  font-family: "Roboto", sans-serif;
+  font-size: 55px;
+  text-align: center;
+  font-weight: 900;
+  margin-top: 0;
+  padding-top: 10px;
+  letter-spacing: 3px;
+  display: inline-block;
+  color: #29323c; 
+  text-shadow: 2px 2px 0px rgba(255, 255, 255, 1),
+               5px 4px 0px rgba(0, 0, 0, 0.15);
+ 
+}
+#career-photo img{
+  width: 350px;
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 20px 15px 15px;
+  
+  transition: transform 1s ease;
+}
+#career-photo img:hover{
+  transform: translateY(-15px);
+}
+ 
+ #career-photo{
+  margin: auto;
+  padding: 20px;
+}
+ 
+
+.footer {
+  padding:40px 0;
+ 
+  color: white;
+  background-color: #889eb3;
+}
+
+.footer  ul {
+  padding:10px;
+  list-style:none;
+  text-align:left;
+  font-size:22px;
+  line-height:2;
+  margin-bottom:0;
+}
+
+.footer  li {
+  padding:0 10px;
+}
+
+.footer  ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer  ul a:hover {
+  opacity:1;
+  font-size: 24px;
+}
+
+.footer  .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.social{
+  display: flex;
+  justify-content: center;
+}
+.social img{
+ max-width: 50px;
+ max-height:  50px;
+ width: auto;
+ height: auto;
+ padding: 15px;
+  }
+.social img:hover{
+  transform: translateY(-15px);
+}
+.footer-content{
+  margin-right: 270px;
+}
+
+ footer{
+  display: flex;
+  justify-content: center;
+ }
+
+ img{
+  border-radius: 15px;
+ }
